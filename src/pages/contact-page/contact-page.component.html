@@ -1,0 +1,40 @@
+<div class="contact-container">
+  <div class="title">
+    Contact
+  </div>
+  
+  <mat-divider></mat-divider>
+
+
+  <mat-card>
+    <form [formGroup]="form" >
+      <mat-form-field>
+        <mat-label>Names*</mat-label>
+        <input formControlName="names" matInput>
+        <mat-error>
+          Names is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Email*</mat-label>
+        <input formControlName="email" matInput type="email" >
+        <mat-error>
+          Please enter a valid <strong>email address</strong>
+        </mat-error>
+      </mat-form-field>
+    
+      <mat-form-field >
+        <mat-label>Leave a comment*</mat-label>
+        <textarea formControlName="comment" matInput></textarea>
+        <mat-error>
+          Comment is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+      <button mat-button mat-raised-button color="primary" (click)="sendForm()">Send form</button>
+    </form>
+</mat-card>
+
+  
+
+</div>

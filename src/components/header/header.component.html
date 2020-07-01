@@ -1,0 +1,25 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <div>
+      <button mat-icon-button (click)="toggleSideBar()">
+        <mat-icon aria-hidden="false" aria-label="home icon">menu</mat-icon>
+      </button>
+      <span>App Logo</span>
+    </div>
+    <div>
+        <ul>
+          <li>
+            <button mat-button [matMenuTriggerFor]="menu">
+              <mat-icon>person_outline</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item>
+                <mat-icon>exit_to_app</mat-icon>
+                Sign out
+              </button>
+            </mat-menu>
+          </li>
+        </ul>
+      </div>
+  </mat-toolbar-row>
+</mat-toolbar>

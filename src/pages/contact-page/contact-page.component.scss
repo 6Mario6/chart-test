@@ -1,0 +1,22 @@
+:host {
+    .title {
+        font-weight: bold;
+        font-size: 20px;
+        color: black;
+        margin-bottom: 12px;
+      }
+    .contact-container {
+        height: 100vw;
+    }
+
+    .mat-form-field {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .mat-card {
+        width: 50%;
+        margin: 40px auto;
+    }
+}
+

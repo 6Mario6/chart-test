@@ -1,0 +1,16 @@
+:host {
+  mat-toolbar-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .mat-toolbar.mat-primary {
+    background-color: #655AA9;
+  }
+
+}
